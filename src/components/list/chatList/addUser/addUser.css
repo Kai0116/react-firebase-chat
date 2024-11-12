@@ -41,6 +41,7 @@
 
     .detail {
       display: flex;
+      flex-direction: row;
       align-items: center;
       gap: 20px;
 
@@ -50,16 +51,15 @@
         border-radius: 50%;
         object-fit: cover;
       }
-
-      button {
-        padding: 10px;
-        border-radius: 10px;
-        background-color: #1a73e8;
-        color: white;
-        border: none;
-        outline: none;
-        cursor: pointer;
-      }
+    }
+    button {
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      outline: none;
+      cursor: pointer;
     }
   }
 }

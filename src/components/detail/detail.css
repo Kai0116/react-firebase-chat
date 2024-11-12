@@ -1,5 +1,7 @@
 .detail {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 
   .user {
     padding: 30px 20px;
@@ -22,6 +24,8 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
+    overflow: scroll;
+    flex: 1;
 
     .option {
       .title {
