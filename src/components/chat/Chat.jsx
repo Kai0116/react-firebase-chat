@@ -98,15 +98,16 @@ const Chat = () => {
       </div>
       <div className="center">
         {chat?.messages?.map((message) => {
-          <div className="message own" key={message?.createdAt}>
-            <div className="texts">
-              {message.img && <img src={message.img} alt="" />}
-              <p>{message.text}</p>
-              {/* <span>{message.createdAt}</span> */}
+          return (
+            <div className="message own" key={message?.createdAt}>
+              <div className="texts">
+                {message.img && <img src={message.img} alt="" />}
+                <p>{message.text}</p>
+                {/* <span>{message.createdAt}</span> */}
+              </div>
             </div>
-          </div>;
+          );
         })}
-
         <div ref={endRef}></div>
       </div>
       <div className="buttom">
